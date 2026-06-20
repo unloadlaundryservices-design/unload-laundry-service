@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Intake Form | Unload Laundry Service</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<section class="form-container">
+
+<img src="assets/images/logo1.png"
+     alt="Unload Laundry Service Logo"
+     class="form-logo">
+
+<h1>Customer Intake Form</h1>
+
+<p class="form-intro">
+    Please complete this form before scheduling your first pickup.
+</p>
+
+<p class="form-note">
+    This form only needs to be completed once unless your contact information, address, delivery preferences, or laundry preferences change.
+</p>
+
+<form action="https://formspree.io/f/xojznveo" method="POST">
+<input type="hidden" name="_subject" value="New Unload Customer Intake Form">
+<input type="hidden" name="_redirect" value="thank-you.html">
+    <div class="form-section">
+        <h2>Customer Information</h2>
+
+        <label>Full Name *</label>
+        <input type="text" name="Customer Name" required>
+
+        <label>Phone Number *</label>
+        <input type="tel" name="Phone Number" required>
+
+        <label>Email Address</label>
+        <input type="email" name="Email">
+
+        <label>Preferred Contact Method *</label>
+        <select name="Preferred Contact Method" required>
+            <option value="">Select One</option>
+            <option>Phone Call</option>
+            <option>Text Message</option>
+            <option>Email</option>
+        </select>
+    </div>
+
+    <div class="form-section">
+        <h2>Pickup & Delivery Address</h2>
+
+        <label>Street Address *</label>
+        <input type="text" name="Street Address" required>
+
+        <label>Apartment / Unit Number</label>
+        <input type="text" name="Unit">
+
+        <label>Neighborhood *</label>
+        <select name="Neighborhood" required>
+            <option value="">Select One</option>
+            <option>Canterbury Farms</option>
+            <option>Hidden Creek</option>
+            <option>Kelarie</option>
+            <option>Chastain Place</option>
+            <option>Indian Springs</option>
+            <option>Tillery Park</option>
+            <option>Other</option>
+        </select>
+
+        <label>City *</label>
+        <input type="text" name="City" value="Grovetown" required>
+
+        <label>State *</label>
+        <input type="text" name="State" value="GA" required>
+
+        <label>ZIP Code *</label>
+        <input type="text" name="ZIP Code" required>
+
+        <label>Preferred Pickup Location *</label>
+        <select name="Pickup Location" required>
+            <option value="">Select One</option>
+            <option>Front Door</option>
+            <option>Garage</option>
+            <option>Porch</option>
+            <option>Other</option>
+        </select>
+
+        <label>Gate Code / Access Instructions</label>
+        <textarea name="Gate Code"></textarea>
+    </div>
+
+    <div class="form-section">
+        <h2>Laundry Preferences</h2>
+
+        <label>Detergent Preference *</label>
+        <select name="Detergent Preference" required>
+            <option value="">Select One</option>
+            <option>Unload Standard HE Detergent</option>
+            <option>Unload Free & Clear HE Detergent</option>
+            <option>Customer Supplied Detergent</option>
+        </select>
+
+        <label>If Customer Supplied, Please Specify</label>
+        <input type="text" name="Customer Detergent">
+
+    <div class="form-section">
+        <h2>Customer Acknowledgement</h2>
+
+        <label><input type="checkbox" required> I have emptied all pockets.</label>
+
+        <label><input type="checkbox" required> I have identified any special-care items.</label>
+
+        <label><input type="checkbox" required> I understand Unload is not responsible for items left in pockets.</label>
+
+        <label><input type="checkbox" required> I understand Unload does not guarantee stain removal.</label>
+
+        <label><input type="checkbox" required> I understand Unload reserves the right to refuse service for unsafe items.</label>
+		
+		<label><input type="checkbox" required> I understand Unload Laundry Service reserves the right to refuse service for items presenting sanitation, infestation, equipment, or safety risks.</label>
+		
+		<label><input type="checkbox" required> I understand I am responsible for disclosing any special care requirements, contamination concerns, or hazardous materials when scheduling a pickup.</label>	
+    </div>
+
+    <div class="form-section">
+        <h2>Delivery Preferences</h2>
+
+        <label>
+            <input type="radio" name="Delivery Method" value="Hand Delivery" required>
+            Hand Delivery
+        </label>
+
+        <label>
+            <input type="radio" name="Delivery Method" value="Leave At Door">
+            Leave At Door
+        </label>
+
+        <label>Initials (Required for Leave At Door Authorization)</label>
+        <input type="text" name="Delivery Initials">
+    </div>
+
+    <div class="form-section">
+        <h2>Electronic Signature</h2>
+
+        <label>Type Full Name *</label>
+        <input type="text" name="Electronic Signature" required>
+
+        <label>Date *</label>
+        <input type="date" name="Date" required>
+    </div>
+
+    <button type="submit" class="primary-button">
+        Submit Customer Profile
+    </button>
+
+</form>
+
+</section>
+
+</body>
+</html>
