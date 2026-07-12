@@ -468,3 +468,10 @@ max-width: 600px;
 margin-left: auto;
 margin-right: auto;
 }
+
+.required-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
